@@ -1,0 +1,122 @@
+/* =========================================================
+   1 · LA PALETA DEL CURSO
+   Se escribe UNA sola vez, acá arriba. Todo lo demás usa var().
+   ========================================================= */
+:root {
+  
+  --blanco:  #f1f1f1;
+  --rojo:     #DD2E26;
+  --cian:     #12C2EC;
+  --amarillo: #ECDB14;
+  --azul-tec: #0A8BAA;
+  --naranja:     #ef6f46;
+
+  /* Escala del rojo */
+  --blanco-920: #ecdddd;
+  --rojo-851: #851717;
+  --rojo-008: #5c0008;
+  --negro-990: #030101;
+  --rojo-94: #7e1414c0;
+  --rojo-3333: #eb5b5bee;
+  --rojo-91: #b91f1f;
+  --rojo-97:  #c46e75;
+  --rojo-22:  #c22c2c;
+
+  --texto:       #b93500;
+  --texto-suave: #c54040;
+  --rojo:      #d44444;
+}
+
+/* =========================================================
+   2 · LA PÁGINA ENTERA
+   display:flex + justify-content:center centran la tarjeta
+   en pantalla sin usar márgenes a ojo.
+   ========================================================= */
+body {
+  margin: 0; /* elimina o agrega el margen o los bordes de la pantalla*/
+  min-height: 100vh;/*ajusta la aultura visible de la tarjeta*/
+  display: flex;/*organiza los elementos hijos*/
+  align-items: center;/*centra los elementos en vertical*/
+  justify-content: center;/*centra los elementos en el eje vertical */
+  background: var(--blanco-920);/*es el color de fondo nde la pagina*/
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;/*es la fuente o estilo de letra */
+  color: var(--texto);/*color del texto determinado de body*/
+}
+
+/* =========================================================
+   3 · LA TARJETA
+   ========================================================= */
+.tarjeta {
+  background: var(--rojo-008);/*es el color de la tarjeta*/
+  border-top: 8px solid var(--rojo);/*texto de los bordes de la tarjeta*/
+  border-radius: 12px;/*el tamaño de los bordes*/
+  padding: 2.5rem 2rem;/*da espacio al contenido*/
+  text-align: center;/*alinia el texto al centro*/
+  max-width: 420px;/*cambia el ancho de la tarjeta*/
+}
+
+/* =========================================================
+   4 · CADA PARTE DE LA TARJETA
+   ========================================================= */
+.tarjeta__logo {
+  width: 72px;/*es el ancho de la imagen*/
+  height: 72px;/*es el alto de la imagen*/
+  object-fit: contain;/*ajustan y mantien la proporcin de la imagen*/
+}
+
+.tarjeta__curso {
+  margin: .75rem 0 0;/*le agrega el margen */
+  font-size: .78rem;/*es el tamaño de la letra*/
+  font-weight: 600;/*le agrega negrita*/
+  letter-spacing: .16em;/*es el espacion de las letras*/
+  text-transform: uppercase;/*lo pone en mayuscula*/
+  color: var(--naranja);/*es el colo del texto*/
+}
+
+.tarjeta__nombre {
+  margin: .4rem 0 0;/*le das margen*/
+  font-size: 2.2rem;/*es el tamaño de la letra*/
+  font-weight: 700;/*le agrega negrita*/
+  letter-spacing: -0.01em;/*es el espacio entre la letras*/
+  color: var(--rojo-97);/*es el color de la letrta*/
+}
+
+.tarjeta__frase {
+  margin: 1rem 0 0;/*le da margen a las frases*/
+  font-size: 1.25rem;/*es el tamo de la letra o texto*/
+  line-height: 1.55;/*es el espacio entre las lineas*/
+  color: var(--rojo-990);/*color de texto */
+}
+
+.tarjeta__autor {
+  margin: 1.25rem 0 0;/*da un margen */
+  color: var(--texto-suave);/*es el color de texto*/
+}
+.tarjeta--oscura {
+  background: var(--rojo-94);/*color de fondo de la tarjeta pequeña*/
+  border-top-color: var(--rojo);/*color del borde de la tarjeta chica*/
+  margin-top: 1em;/*es el margen entre las tarjetas*/
+}
+
+.tarjeta__pregunta {
+  margin: 0;/*da margen*/
+  font-size: .8rem;/*es el tamaño de la letra*/
+  font-weight: 600;/*es el grosor de la letra*/
+  letter-spacing: .14em;/*espacio entre las letras*/
+  text-transform: uppercase;/*lo pone en mayuscula*/
+  color: var(--rojo-3333);/*es el color de la letras*/
+}
+
+.tarjeta__respuesta {
+  margin: .5rem 0 0;/*le da un margen*/
+  font-size: 1.4rem;/*tamaño de la letra*/
+  font-weight: 700;/*grosor de la letra*/
+  color: var(--blanco-920);/*color del texto */
+}
+
+/* Para que las dos tarjetas se apilen con un hueco entre ellas */
+body {
+  flex-direction: column;/*direccion de los elementos*/
+  gap: 1.5rem;/*espacio entre los elementos*/
+  padding: 2rem 1rem;/*espacio al contenido*/
+}
