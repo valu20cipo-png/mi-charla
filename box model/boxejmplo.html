@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards (tarjetas)</title>
+    <style>
+        /* definir variable*/
+        body {
+            background-color: beige;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(126, 9, 9);
+            width: 1000px;
+            margin: 0 auto;/*top - botton son 0px y auto para left y right*/
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+        .card{
+            background-color: #5c0008;;
+            width: 360px;
+            text-align: center;
+            border: 3px solid #d44444; 
+            padding: 30px;
+        }
+        .card__imagen img{
+            width: 80px;
+            height: 80px;
+        }
+        .card__titulo{
+            font-size: 1.7rem;
+            color: rgb(221, 215, 215);
+        }
+        .card__parrafo{
+            font-size: 1.3rem;
+            line-height: 1.55;
+        }
+        .card__enlace{
+            background-color: #c22c2c;
+            color: black;
+            padding: 10px; 
+            border-radius: 20%;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="container"> <!--container-->
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="../css/asset/f1.png" alt="">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">modelo de card</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">pequeño texto agregado sobre una card que explica algo brevemente</p>
+                <!--enlace-->
+                <a href="" class="card__enlace">comprar</a>
+            </article>
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="../css/asset/f1.png" alt="">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">modelo de card</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">pequeño texto agregado sobre una card que explica algo brevemente</p>
+                <!--enlace-->
+                <a href="" class="card__enlace">comprar</a>
+            </article>
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="../css/asset/f1.png" alt="">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">modelo de card</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">pequeño texto agregado sobre una card que explica algo brevemente</p>
+                <!--enlace-->
+                <a href="" class="card__enlace">comprar</a>
+            </article>
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="../css/asset/f1.png" alt="">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">modelo de card</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">pequeño texto agregado sobre una card que explica algo brevemente</p>
+                <!--enlace-->
+                <a href="" class="card__enlace">comprar</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
