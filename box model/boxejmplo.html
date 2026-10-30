@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cards (tarjetas)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* definir variable*/
         body {
@@ -15,38 +16,57 @@
         .container {
             background-color: rgb(126, 9, 9);
             width: 1000px;
-            margin: 0 auto;/*top - botton son 0px y auto para left y right*/
+            margin: 0 auto;
+            /*top - botton son 0px y auto para left y right*/
             display: flex;
             gap: 25px;
             flex-wrap: wrap;
             justify-content: center;
             padding: 10px;
         }
-        .card{
-            background-color: #5c0008;;
+
+        .card {
+            background-color: #5c0008;
+            ;
             width: 360px;
             text-align: center;
-            border: 3px solid #d44444; 
+            border: 3px solid #d44444;
             padding: 30px;
         }
-        .card__imagen img{
+
+        .card__imagen img {
             width: 80px;
             height: 80px;
         }
-        .card__titulo{
+
+        .card__titulo {
             font-size: 1.7rem;
             color: rgb(221, 215, 215);
         }
-        .card__parrafo{
+
+        .card__parrafo {
             font-size: 1.3rem;
             line-height: 1.55;
         }
-        .card__enlace{
+
+        .card__enlace {
             background-color: #c22c2c;
             color: black;
-            padding: 10px; 
+            padding: 10px;
             border-radius: 20%;
             margin-bottom: 30px;
+        }
+        footer{
+            background-color: gray;
+            border-width: 0;
+                display: block;
+    unicode-bidi: isolate;
+        }
+        .footer-top{
+
+        }
+        .footer-botton{
+
         }
     </style>
 </head>
@@ -107,8 +127,77 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
+        <!--primer fila-->
+        <div class="footer-top">
+            <section  class="footer-top-cal">
+                <!--ayuda-->
+                <h4>ayuda</h4>
+                <ul>
 
+                    <li><a href="">contactanos</a></li>
+                    <li><a href="">metodo de pago</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">segui tu pedido</a></li>
+                    <li><a href="">terminos y condiciones de uso</a></li>
+                    <li><a href="">defensa de las y los consumidores</a></li>
+                    <li><a href="">descuento para estudiantes </a></li>
+                    <li><a href="">recomenda a un amgo</a></li>
+                </ul>
+                <a href="" class="footer-top-btn">boton de arrepentimiento</a>
+            </section>
+            <section class="footer-top-cal">
+                <!--servicios-->
+                <h4>servicios</h4>
+                <ul>
+
+                    <li><a href="">tienda</a></li>
+                    <li><a href="">cambios y devoluciones</a></li>
+                    <li><a href="">cuidado de los productos</a></li>
+                    <li><a href="">guia de talles</a></li>
+                    <li><a href="">politica de privacidad</a></li>
+                    <li><a href="">programa de afiliados</a></li>
+                </ul>
+            </section>
+            <section class="footer-top-cal">
+                <!--acerca-->
+                <h4>acerca de puma</h4>
+                <ul>
+                    <li><a href="">campañia</a></li>
+                    <li><a href="">noticias corporativas</a></li>
+                    <li><a href="">empleo</a></li>
+                    <li><a href="">PUMA sale</a></li>
+                </ul>
+            </section>
+            <section class="footer-top-cal">
+                <!--newletter-->
+                <h4> manteneme al dia</h4>
+                <p>inscribite y obtene 15% en tu primera compra</p>
+                <form action="" method="post" class="footer-top-form-news">
+                    <input type="email" name="correo" id="correo" placeholder="ingrerse su email">
+                    <input type="submit" value="suscribirse">
+                </form>
+                <div class="footer-top-social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""> <i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </section>
+        </div>
+        <div class="footer-botton">
+            <section class="footer-botton-legal">
+                <a href="">terminos y condiciones</a>
+                <a href="">politica de privacidad</a>
+                <a href="">configurar cookies</a>
+            </section>
+
+        <section class="footer-botton-cards">
+            <img src="/css/asset/visa.png" alt="visa" class="footer-botton-img">
+            <img src="/css/asset/master.png" alt="mastercard" class="footer-botton-img">
+            <img src="/css/asset/american.jpg" alt="american expres" class="footer-botton-img">
+        </section>
+        </div>
     </footer>
 </body>
 

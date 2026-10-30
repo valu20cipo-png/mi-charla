@@ -1,0 +1,45 @@
+.columna {
+  flex-direction: column;
+}
+.contenedor{
+    background: #f1f5f9;
+    border: 2px dashed #94a3b8;
+    border-radius: 8px;
+    padding: 0.9rem;
+    margin: 0.75rem 0;
+}
+.caja{
+    padding: 10px;
+}
+.uno{
+    background-color: purple;
+    color: rgb(233, 229, 229);
+    border-radius: 5px;
+    padding: 1opx;
+    text-align: center;
+    font-weight: 600;
+}
+.dos{
+ background-color: violet;
+  color: rgb(233, 229, 229);
+ border-radius: 5px;
+    padding: 1opx;
+    text-align: center;
+    font-weight: 600;
+}
+.tres{
+ background-color: rgb(173, 1, 58);
+    color: rgb(233, 229, 229);
+    border-radius: 5px;
+    padding: 1opx;
+    text-align: center;
+    font-weight: 600;
+}
+.cuatro{
+     background-color: blueviolet;
+    color: rgb(233, 229, 229);
+    border-radius: 5px;
+    padding: 1opx;
+    text-align: center;
+    font-weight: 600;
+}

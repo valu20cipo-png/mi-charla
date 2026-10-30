@@ -1,15 +1,13 @@
-/* =========================================================
-   1 · LA PALETA DEL CURSO
-   Se escribe UNA sola vez, acá arriba. Todo lo demás usa var().
-   ========================================================= */
 :root {
-
   --blanco: #f1f1f1;
   --rojo: #DD2E26;
   --cian: #12C2EC;
   --amarillo: #ECDB14;
   --azul-tec: #0A8BAA;
   --naranja: #ef6f46;
+
+
+
 
   /* Escala del rojo */
   --blanco-920: #ecdddd;
@@ -25,9 +23,15 @@
   --rojito-1: #ff9797;
   --rosa: #edb9b9;
 
+
+
+
   --texto: #b93500;
   --texto-suave: #c54040;
   --rojo: #d44444;
+
+
+
 
   /* la escala de espaciado del curso. Usá estos y ningún otro número. */
   --e-1: .25rem;
@@ -37,7 +41,16 @@
   --e-5: 2rem;
   --e-6: 3rem;
 
+
+
+
 }
+
+
+
+
+
+
 
 
 /* =========================================================
@@ -50,8 +63,7 @@ body {
   /* elimina o agrega el margen o los bordes de la pantalla*/
   min-height: 100vh;
   /*ajusta la aultura visible de la tarjeta*/
-  display: flex;
-  /*organiza los elementos hijos*/
+  flex-direction: column;
   align-items: center;
   /*centra los elementos en vertical*/
   justify-content: center;
@@ -67,6 +79,9 @@ body {
   color: var(--texto);
   /*color del texto determinado de body*/
 }
+
+
+
 
 /* =========================================================
    3 · LA TARJETA
@@ -86,6 +101,9 @@ body {
   /*cambia el ancho de la tarjeta*/
 }
 
+
+
+
 /* =========================================================
    4 · CADA PARTE DE LA TARJETA
    ========================================================= */
@@ -97,6 +115,9 @@ body {
   object-fit: contain;
   /*ajustan y mantien la proporcin de la imagen*/
 }
+
+
+
 
 .tarjeta__curso {
   margin: .75rem 0 0;
@@ -113,6 +134,9 @@ body {
   /*es el colo del texto*/
 }
 
+
+
+
 .tarjeta__nombre {
   margin: .4rem 0 0;
   /*le das margen*/
@@ -126,6 +150,9 @@ body {
   /*es el color de la letrta*/
 }
 
+
+
+
 .tarjeta__frase {
   margin: 1rem 0 0;
   /*le da margen a las frases*/
@@ -137,12 +164,18 @@ body {
   /*color de texto */
 }
 
+
+
+
 .tarjeta__autor {
   margin: 1.25rem 0 0;
   /*da un margen */
   color: var(--texto-suave);
   /*es el color de texto*/
 }
+
+
+
 
 .tarjeta--oscura {
   background: var(--rojo-94);
@@ -152,6 +185,9 @@ body {
   margin-top: 1em;
   /*es el margen entre las tarjetas*/
 }
+
+
+
 
 .tarjeta__pregunta {
   margin: 0;
@@ -168,6 +204,9 @@ body {
   /*es el color de la letras*/
 }
 
+
+
+
 .tarjeta__respuesta {
   margin: .5rem 0 0;
   /*le da un margen*/
@@ -178,7 +217,13 @@ body {
   color: var(--blanco-920);
   /*color del texto */
 
+
+
+
 }
+
+
+
 
 /* =========================================================
    EL BOTÓN: por eso existen las pseudo-clases
@@ -196,19 +241,31 @@ body {
   /* sin subrayado, es un botón y no un texto */
 }
 
+
+
+
 .tarjeta__boton:hover {
   background: var(--naranja);
 }
 
+
+
+
 .tarjeta__boton:active {
   background: var(--rojo-008);
 }
+
+
+
 
 /* Accesibilidad: el foco del teclado tiene que verse SIEMPRE */
 .tarjeta__boton:focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 3px;
 }
+
+
+
 
 /* =========================================================
    LA FICHA DE TU IDEA
@@ -225,6 +282,9 @@ body {
   background: var(--rojo-008);
 }
 
+
+
+
 .ficha__etiqueta {
   margin: 0;
   font-size: .75rem;
@@ -233,12 +293,18 @@ body {
   color: var(--blanco);
 }
 
+
+
+
 .ficha__titulo {
   margin: var(--e-2) 0 var(--e-5);
   font-size: 1.6rem;
   line-height: 1.25;
   color: var(--rojito);
 }
+
+
+
 
 .ficha__campo {
   margin: var(--e-4) 0 var(--e-1);
@@ -248,11 +314,17 @@ body {
   color: var(--blanco);
 }
 
+
+
+
 .ficha__texto {
   margin: 0;
   line-height: 1.65;
   color: var(--rosa);
 }
+
+
+
 
 /* las etiquetas: display inline-flex las deja como píldoras */
 .ficha__tags {
@@ -263,6 +335,9 @@ body {
   list-style: none;
 }
 
+
+
+
 .ficha__tags li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
@@ -271,12 +346,18 @@ body {
   font-size: .8rem;
 }
 
+
+
+
 #ideas {
-  background-color: #d8c9c9;
+  background-color: #e3b9b9;
   background-image: none;
   border: 3px;
   max-width: none;
 }
+
+
+
 
 .container {
   background-color: rgb(126, 9, 9);
@@ -289,6 +370,9 @@ body {
   padding: 10px;
 }
 
+
+
+
 .idea {
   background-color: #5c0008;
   ;
@@ -298,20 +382,32 @@ body {
   padding: 30px;
 }
 
+
+
+
 .idea__imagen img {
   width: 80px;
   height: 80px;
 }
+
+
+
 
 .idea__titulo {
   font-size: 1.7rem;
   color: rgb(221, 215, 215);
 }
 
+
+
+
 .idea__parrafo {
   font-size: 1.3rem;
   line-height: 1.55;
 }
+
+
+
 
 .idea__enlace {
   display: inline-block;
@@ -325,13 +421,19 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 
-
 }
+
+
+
+
 
 .idea__enlace:hover {
   background: var(--naranja);
   color: white;
 }
+
+
+
 
 .idea__enlace:active {
   background: var(--rojo-008);
@@ -343,6 +445,9 @@ body {
   outline-offset: 3px;
 }
 
+
+
+
 .lista {
   margin: var(--e-5) 0 0;
   padding: 0;
@@ -351,6 +456,9 @@ body {
   list-style: none;
 }
 
+
+
+
 .lista li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
@@ -358,9 +466,99 @@ body {
   color: var(--rosa);
   font-size: .8rem;
 }
-.titulo{
+
+
+.titulo {
   text-align: center;
   font-size: 70px;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
+}
+
+
+.container-header {
+  background: #e5a0a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.milogo {
+  width: 110;
+  border-radius: 40px;
+  padding: 10px red;
+  border: 5px solid var(--naranja);
+}
+
+.container-header nav {
+  padding: 15px;
+  margin: 0;
+}
+
+.container-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  text-transform: uppercase;
+}
+
+.container-header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--rojito);
+  font-weight: 800;
+  font-size: 1.2rem;
+  transition: background-color 0.5s ease;
+}
+
+.container-header a:hover {
+  background-color: #c46e75;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.footer-top {
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-top a,
+.footer-botton a {
+  color: var(--rojo-3333);
+  text-decoration: none;
+}
+
+.footer-botton {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 12rem, 25rem;
+  border-radius: 10px;
+  border-top:3px solid var(--rojo-008);
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer {
+  background-color: #e5a0a0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer-top-cal ul {
+  list-style: none;
+  font-size: larger;
+ padding-left: 0px;
+}
+.footer-top-cal h4{
+  font-size: x-large;
+}
+.footer-top-btn{
+  background-color: white;
+  padding: 8px;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
 }
