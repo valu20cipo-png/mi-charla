@@ -21,12 +21,12 @@
   --rojo-22: #c22c2c;
   --rojito: #a70000;
   --rojito-1: #ff9797;
-  --rosa: #edb9b9;
+  --champaña:  #f2e5c6;
 
 
 
 
-  --texto: #b93500;
+  --texto:  #3e000c;
   --texto-suave: #c54040;
   --rojo: #d44444;
 
@@ -48,11 +48,6 @@
 
 
 
-
-
-
-
-
 /* =========================================================
    2 · LA PÁGINA ENTERA
    display:flex + justify-content:center centran la tarjeta
@@ -62,12 +57,6 @@ body {
   margin: 0;
   /* elimina o agrega el margen o los bordes de la pantalla*/
   min-height: 100vh;
-  /*ajusta la aultura visible de la tarjeta*/
-  flex-direction: column;
-  align-items: center;
-  /*centra los elementos en vertical*/
-  justify-content: center;
-  /*centra los elementos en el eje vertical */
   background: var(--blanco-920);
   /*es el color de fondo nde la pagina*/
   background-image: url(./asset/ln.jpg);
@@ -80,8 +69,12 @@ body {
   /*color del texto determinado de body*/
 }
 
-
-
+.desp{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 /* =========================================================
    3 · LA TARJETA
@@ -350,7 +343,7 @@ body {
 
 
 #ideas {
-  background-color: #e3b9b9;
+  background-color:  #f2e5c6;
   background-image: none;
   border: 3px;
   max-width: none;
@@ -477,7 +470,7 @@ body {
 
 
 .container-header {
-  background: #e5a0a0;
+  background: #7a1c1c;;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -540,7 +533,7 @@ body {
 }
 
 .footer {
-  background-color: #e5a0a0;
+  background-color: #7a1c1c;;
   border-width: 0;
   margin: 0;
   padding: 0;
