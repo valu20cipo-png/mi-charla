@@ -22,11 +22,11 @@
   --rojito: #a70000;
   --rojito-1: #ff9797;
   --champaña:  #f2e5c6;
+  --rojo-btn:  #c4615b;
+ 
 
 
-
-
-  --texto:  #3e000c;
+  --texto:  #ff7878;
   --texto-suave: #c54040;
   --rojo: #d44444;
 
@@ -438,9 +438,6 @@ body {
   outline-offset: 3px;
 }
 
-
-
-
 .lista {
   margin: var(--e-5) 0 0;
   padding: 0;
@@ -455,8 +452,7 @@ body {
 .lista li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
-  background: var(--rojo-3333);
-  color: var(--rosa);
+  background: #872d2f;;
   font-size: .8rem;
 }
 
@@ -470,7 +466,7 @@ body {
 
 
 .container-header {
-  background: #7a1c1c;;
+  background: #872d2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -499,7 +495,7 @@ body {
 .container-header a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--rojito);
+  color: #4d111b;
   font-weight: 800;
   font-size: 1.2rem;
   transition: background-color 0.5s ease;
@@ -518,7 +514,7 @@ body {
 
 .footer-top a,
 .footer-botton a {
-  color: var(--rojo-3333);
+  color: var(--champaña);
   text-decoration: none;
 }
 
@@ -533,7 +529,7 @@ body {
 }
 
 .footer {
-  background-color: #7a1c1c;;
+  background-color: #872d2f;
   border-width: 0;
   margin: 0;
   padding: 0;
@@ -549,9 +545,51 @@ body {
   font-size: x-large;
 }
 .footer-top-btn{
-  background-color: white;
+  background-color: var(--rojo-btn);
   padding: 8px;
     padding-bottom: 20px;
     display: block;
     text-align: center;
+}
+.mis_ideas{
+    max-width: 520px;
+  padding: var(--e-5);
+  /* 2rem de aire adentro */
+  border: 1px solid var(--rojo-94);
+  border-top: 6px solid var(--rojo-851);
+  border-radius: 12px;
+  background: var(--rojo-008);
+ margin: 15px;
+ /* este margin me ayuda a dejar la caja al costado para que se vea la img*/
+}
+.parrafo{
+  color:#efe6de;
+
+}
+.titulo_idea{
+  color: #ad0d2f;
+    text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#idea_riv {
+  background-color:  #f2e5c6;
+  background-image: url(asset/rivalidad.jpg);
+  border: 3px;
+  max-width: none;
+}
+#idea_pas {
+  background-color:  #f2e5c6;
+  background-image: url(asset/pasion.avif);
+  /* la url es para que se vea la imagen en css*/
+  border: 3px;
+  max-width: none;
+}
+#idea_fan {
+  background-color:  #f2e5c6;
+  background-image: url(asset/fans.jpg);
+  border: 3px;
+  max-width: none;
 }
