@@ -21,12 +21,12 @@
   --rojo-22: #c22c2c;
   --rojito: #a70000;
   --rojito-1: #ff9797;
-  --champaña:  #f2e5c6;
-  --rojo-btn:  #c4615b;
- 
+  --champaña: #f2e5c6;
+  --rojo-btn: #c4615b;
 
 
-  --texto:  #ff7878;
+
+  --texto: #ff7878;
   --texto-suave: #c54040;
   --rojo: #d44444;
 
@@ -69,11 +69,11 @@ body {
   /*color del texto determinado de body*/
 }
 
-.desp{
+.desp {
   display: flex;
   justify-content: center;
-    align-items: center;
-    height: 100vh;
+  align-items: center;
+  height: 100vh;
 }
 
 /* =========================================================
@@ -343,7 +343,7 @@ body {
 
 
 #ideas {
-  background-color:  #f2e5c6;
+  background-color: #f2e5c6;
   background-image: none;
   border: 3px;
   max-width: none;
@@ -407,7 +407,6 @@ body {
   margin-top: 2rem;
   padding: .9rem 2rem;
   border-radius: 999px;
-
   background: var(--rojo-22);
   color: var(--negro-990);
   font-weight: 700;
@@ -447,15 +446,22 @@ body {
 }
 
 
-
-
 .lista li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
-  background: #872d2f;;
+  background: #872d2f;
+  color: var(--champaña);
   font-size: .8rem;
 }
 
+.lista a{
+  text-decoration: none;
+  color: var(--champaña);
+}
+
+.lista ul{
+  list-style: none;
+}
 
 .titulo {
   text-align: center;
@@ -492,7 +498,7 @@ body {
   text-transform: uppercase;
 }
 
-.container-header a {
+.container-header__enlace{
   text-decoration: none;
   text-transform: uppercase;
   color: #4d111b;
@@ -501,7 +507,7 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.container-header a:hover {
+.container-header__enlace:hover {
   background-color: #c46e75;
   padding: 5px;
   border-radius: 6px;
@@ -512,7 +518,7 @@ body {
   display: flex;
 }
 
-.footer-top a,
+.footer-top a, 
 .footer-botton a {
   color: var(--champaña);
   text-decoration: none;
@@ -523,7 +529,7 @@ body {
   font-size: 20px;
   padding: 12rem, 25rem;
   border-radius: 10px;
-  border-top:3px solid var(--rojo-008);
+  border-top: 3px solid var(--rojo-008);
   justify-content: space-between;
   display: flex;
 }
@@ -539,57 +545,82 @@ body {
 .footer-top-cal ul {
   list-style: none;
   font-size: larger;
- padding-left: 0px;
+  padding-left: 0px;
 }
-.footer-top-cal h4{
+
+.footer-top-cal h4 {
   font-size: x-large;
 }
-.footer-top-btn{
+
+.footer-top-btn {
   background-color: var(--rojo-btn);
   padding: 8px;
-    padding-bottom: 20px;
-    display: block;
-    text-align: center;
+  padding-bottom: 20px;
+  display: block;
+  text-align: center;
 }
-.mis_ideas{
-    max-width: 520px;
+
+.mis_ideas {
+  max-width: 520px;
   padding: var(--e-5);
   /* 2rem de aire adentro */
   border: 1px solid var(--rojo-94);
   border-top: 6px solid var(--rojo-851);
   border-radius: 12px;
   background: var(--rojo-008);
- margin: 15px;
- /* este margin me ayuda a dejar la caja al costado para que se vea la img*/
+  margin: 15px;
+  /* este margin me ayuda a dejar la caja al costado para que se vea la img*/
 }
-.parrafo{
-  color:#efe6de;
+
+.parrafo {
+  color: #efe6de;
 
 }
-.titulo_idea{
+
+.titulo_idea {
   color: #ad0d2f;
-    text-align: center;
+  text-align: center;
   font-size: 70px;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
 }
 
 #idea_riv {
-  background-color:  #f2e5c6;
+  background-color: #f2e5c6;
   background-image: url(asset/rivalidad.jpg);
   border: 3px;
   max-width: none;
 }
+
 #idea_pas {
-  background-color:  #f2e5c6;
+  background-color: #f2e5c6;
   background-image: url(asset/pasion.avif);
   /* la url es para que se vea la imagen en css*/
   border: 3px;
   max-width: none;
 }
+
 #idea_fan {
-  background-color:  #f2e5c6;
+  background-color: #f2e5c6;
   background-image: url(asset/fans.jpg);
   border: 3px;
   max-width: none;
+}
+#idea_principal{
+  background-color: var(--champaña);
+  background-image: none;
+}
+
+.contenedor_principal{
+  margin: 0 auto;
+  background-color: var(--rojo-008);
+  width: 1250px;
+}
+
+.pag_principal {
+    background-color: #5c0008;
+    width: 100%;
+    text-align: center;
+    border: 3px solid #d44444;
+    padding: 30px;
 }
