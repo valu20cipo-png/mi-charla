@@ -454,12 +454,12 @@ body {
   font-size: .8rem;
 }
 
-.lista a{
+.lista a {
   text-decoration: none;
   color: var(--champaña);
 }
 
-.lista ul{
+.lista ul {
   list-style: none;
 }
 
@@ -498,7 +498,7 @@ body {
   text-transform: uppercase;
 }
 
-.container-header__enlace{
+.container-header__enlace {
   text-decoration: none;
   text-transform: uppercase;
   color: #4d111b;
@@ -518,7 +518,7 @@ body {
   display: flex;
 }
 
-.footer-top a, 
+.footer-top a,
 .footer-botton a {
   color: var(--champaña);
   text-decoration: none;
@@ -580,7 +580,7 @@ body {
 .titulo_idea {
   color: #ad0d2f;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -606,21 +606,65 @@ body {
   border: 3px;
   max-width: none;
 }
-#idea_principal{
+
+#idea_principal {
   background-color: var(--champaña);
   background-image: none;
 }
 
-.contenedor_principal{
+.contenedor_principal {
   margin: 0 auto;
   background-color: var(--rojo-008);
   width: 1250px;
 }
 
 .pag_principal {
-    background-color: #5c0008;
-    width: 100%;
-    text-align: center;
-    border: 3px solid #d44444;
-    padding: 30px;
+  background-color: #5c0008;
+  width: 100%;
+  text-align: center;
+  border: 3px solid #d44444;
+  padding: 30px;
+  display: flex;
+}
+
+.footer-top-botn {
+  background-color: var(--rojo-btn);
+  padding: 24px;
+  padding-bottom: 12px;
+  display: block;
+  text-align: center;
+}
+
+.footer-email {
+  background-color: #711023;
+  padding: 14px;
+  padding-bottom: 16px;
+  display: block;
+  text-align: center;
+ 
+}
+
+.parrafo-prin {
+  color: var(--champaña);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-left:#d44444 6px solid;
+  padding: 50px;
+  font-size: large;
+}
+.parrafo-prin-2{
+  color: var(--champaña);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-right:#d44444 6px solid;
+  padding: 50px;
+  font-size: large;
+}
+.img-prin{
+  width: 220px;
+  padding: 6px;
+}
+.img-prin-2{
+    width: 180px;
+  padding: 6px;
 }
