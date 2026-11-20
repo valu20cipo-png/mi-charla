@@ -10,18 +10,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   /* Escala del rojo */
   --blanco-920: #ecdddd;
   --rojo-851: #851717;
@@ -40,26 +28,10 @@
 
 
 
-
-
-
-
-
-
   /*colores de texto*/
   --texto: #ff7878;
   --texto-suave: #c54040;
   --rojo: #d44444;
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -77,27 +49,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -132,9 +84,9 @@ body {
 
 
 
-
 .desp {
-  /*es el div del index*/
+  /*Centra la tarjeta en el 
+  medio de la pantalla, tanto horizontal como verticalmente.*/
   display: flex;
   /*organizar y centrar el contenido.*/
   justify-content: center;
@@ -147,11 +99,12 @@ body {
 
 
 
-
 /* =========================================================
    3 · LA TARJETA
    ========================================================= */
 .tarjeta {
+  /*Diseña el recuadro principal
+  donde está toda la información de mi presentación.*/
   background: var(--rojo-008);
   /*es el color de la tarjeta*/
   border-top: 8px solid var(--rojo);
@@ -170,21 +123,11 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* =========================================================
    4 · CADA PARTE DE LA TARJETA
    ========================================================= */
 .tarjeta__logo {
+  /*Modifica el ancho, el alto y la proporción de la imagen del logo.*/
   width: 72px;
   /*es el ancho de la imagen*/
   height: 72px;
@@ -196,19 +139,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .tarjeta__curso {
+  /*modifica el texto del curso*/
   margin: .75rem 0 0;
   /*le agrega el margen */
   font-size: .78rem;
@@ -227,18 +159,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .tarjeta__nombre {
+  /*modificando el tamaño, el grosor y el color de la letra.*/
   margin: .4rem 0 0;
   /*le das margen*/
   font-size: 2.2rem;
@@ -254,19 +176,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .tarjeta__frase {
+  /*modifica la frase principal y le da diseño*/
   margin: 1rem 0 0;
   /*le da margen a las frases*/
   font-size: 1.25rem;
@@ -284,15 +195,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 .tarjeta__autor {
+  /*	Cambia el color y el espacio del texto
+   que contiene la frase del autor.*/
   margin: 1.25rem 0 0;
   /*da un margen */
   color: var(--texto-suave);
@@ -305,16 +210,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 .tarjeta--oscura {
+  /*Crea una segunda tarjeta con 
+  un fondo diferente y un borde superior.*/
   background: var(--rojo-94);
   /*color de fondo de la tarjeta pequeña*/
   border-top-color: var(--rojo);
@@ -328,17 +226,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .tarjeta__pregunta {
+  /*es el titulo o la pregunta */
   margin: 0;
   /*da margen*/
   font-size: .8rem;
@@ -357,18 +246,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .tarjeta__respuesta {
+  /*es el texto o respuesta en este caso es el nombre del autor de la frase */
   margin: .5rem 0 0;
   /*le da un margen*/
   font-size: 1.4rem;
@@ -380,30 +259,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -414,6 +270,7 @@ body {
    EL BOTÓN: por eso existen las pseudo-clases
    ========================================================= */
 .tarjeta__boton {
+  /*Diseña el botón que permite pasar a otra página.*/
   display: inline-block;
   /*darle dimensiones y espacios al botón.*/
   margin-top: 2rem;
@@ -435,17 +292,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .tarjeta__boton:hover {
+  /*l fondo del botón cuando paso el mouse por encima.*/
   background: var(--naranja);
 }
 
@@ -454,30 +302,10 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .tarjeta__boton:active {
+  /*Muestra un contorno cuando selecciono el botón utilizando*/
   background: var(--rojo-008);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -496,20 +324,11 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* =========================================================
    LA FICHA DE TU IDEA
    ========================================================= */
 .ficha {
+  /*Diseña el recuadro principal donde está toda la información de mi idea.*/
   max-width: 520px;
   margin: var(--e-6) auto;
   /* 3rem arriba/abajo · auto a los lados = centrada */
@@ -525,18 +344,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .ficha__etiqueta {
+  /*texto pequeño que aparece arriba del título.*/
   margin: 0;
   font-size: .75rem;
   letter-spacing: .16em;
@@ -548,18 +357,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .ficha__titulo {
+  /*título principal de la ficha.*/
   margin: var(--e-2) 0 var(--e-5);
   font-size: 1.6rem;
   line-height: 1.25;
@@ -570,18 +369,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .ficha__campo {
+  /*los subtítulos,*/
   margin: var(--e-4) 0 var(--e-1);
   font-size: .72rem;
   letter-spacing: .12em;
@@ -591,20 +380,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.ficha__texto {
+.ficha__texto { /*párrafos que explican cada seccion.*/
   margin: 0;
   line-height: 1.65;
   color: var(--rosa);
@@ -613,20 +389,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* las etiquetas: display inline-flex las deja como píldoras */
-.ficha__tags {
+.ficha__tags { /*Organiza las palabras clave en forma de lista horizontal.*/
   margin: var(--e-5) 0 0;
   padding: 0;
   display: flex;
@@ -637,19 +401,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.ficha__tags li {
+.ficha__tags li { /*es para los elementos de la lista les da diseñó*/
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
   background: var(--rojo-3333);
@@ -661,18 +413,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#ideas {
+#ideas { /*es la caja principal de la pagina*/
   background-color: #f2e5c6;
   background-image: none;
   border: 3px;
@@ -682,25 +423,15 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
+.container { /*contenedor que agrupa todas las tarjetas y las organiza.*/
   background-color: rgb(126, 9, 9);
   width: 1000px;
   margin: 0 auto;
   display: flex;
-  gap: 25px; /*espacio entre elementos*/
-  flex-wrap: wrap; /*evita que los elementos se pasen de su lina*/
+  gap: 25px;
+  /*espacio entre elementos*/
+  flex-wrap: wrap;
+  /*evita que los elementos se pasen de su lina*/
   justify-content: center;
   padding: 10px;
 }
@@ -709,20 +440,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.idea {
+.idea { /*es la que diseña cada tarjeta individual*/
   background-color: #5c0008;
- 
   width: 360px;
   text-align: center;
   border: 3px solid #d44444;
@@ -734,17 +453,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-.idea__imagen img {
+.idea__imagen img { /*el tamaño  de la imagen de cada tarjeta.*/
   width: 80px;
   height: 80px;
 }
@@ -754,17 +463,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-.idea__titulo {
+.idea__titulo { /*diseña el titulo*/
   font-size: 1.7rem;
   color: rgb(221, 215, 215);
 }
@@ -773,18 +472,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.idea__parrafo {
+.idea__parrafo { /*es el diseño de las p o parrafos*/
   font-size: 1.3rem;
   line-height: 1.55;
 }
@@ -792,19 +480,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.idea__enlace {
+.idea__enlace { /*Diseña el enlace que funciona como botón para ver más información.*/
   display: inline-block;
   margin-top: 2rem;
   padding: .9rem 2rem;
@@ -816,30 +492,12 @@ body {
   text-transform: uppercase;
 
 
-
-
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.idea__enlace:hover {
+.idea__enlace:hover { /*Cambia el color del botón cuando paso el mouse por encima.*/
   background: var(--naranja);
   color: white;
 }
@@ -847,30 +505,14 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.idea__enlace:active {
+.idea__enlace:active { /*Cambia el fondo mientras presiono el botón.*/
   background: var(--rojo-008);
 }
 
 
 
 
-
-
-
-
-.idea__enlace:focus-visible {
+.idea__enlace:focus-visible { /*Muestra un contorno cuando selecciono el enlace con el teclado.*/
   outline: 3px solid #ffffff;
   outline-offset: 3px;
 }
@@ -878,7 +520,7 @@ body {
 
 
 
-.lista {
+.lista { /*los elementos de la lista horizontalmente y establece el espacio entre ellos.*/
   margin: var(--e-5) 0 0;
   padding: 0;
   display: flex;
@@ -888,12 +530,7 @@ body {
 
 
 
-
-
-
-
-
-.lista li {
+.lista li { /*Diseña cada elemento de la lista, agregando fondo, color y espacios internos.*/
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
   background: #872d2f;
@@ -904,7 +541,7 @@ body {
 
 
 
-.lista a {
+.lista a { /*Modifica la apariencia de los enlaces que están dentro de la lista.*/
   text-decoration: none;
   color: var(--champaña);
 }
@@ -912,14 +549,14 @@ body {
 
 
 
-.lista ul {
+.lista ul { /*Elimina las viñetas de las listas internas.*/
   list-style: none;
 }
 
 
 
 
-.titulo {
+.titulo { 
   text-align: center;
   font-size: 70px;
   font-weight: 900;
@@ -928,12 +565,7 @@ body {
 
 
 
-
-
-
-
-
-.container-header {
+.container-header { /*Modifica el tamaño, los bordes y la apariencia del logo.*/
   background: #872d2f;
   display: flex;
   justify-content: space-between;
@@ -942,12 +574,7 @@ body {
 
 
 
-
-
-
-
-
-.milogo {
+.milogo { /*Modifica el tamaño, los bordes y la apariencia del logo.*/
   width: 110;
   border-radius: 40px;
   padding: 10px red;
@@ -957,7 +584,7 @@ body {
 
 
 
-.container-header nav {
+.container-header nav { /* es el que modifica los bordes */
   padding: 15px;
   margin: 0;
 }
@@ -965,7 +592,7 @@ body {
 
 
 
-.container-header nav ul {
+.container-header nav ul { 
   list-style: none;
   display: flex;
   gap: 15px;
@@ -975,7 +602,7 @@ body {
 
 
 
-.container-header__enlace {
+.container-header__enlace { 
   text-decoration: none;
   text-transform: uppercase;
   color: #4d111b;
@@ -987,7 +614,7 @@ body {
 
 
 
-.container-header__enlace:hover {
+.container-header__enlace:hover { 
   background-color: #c46e75;
   padding: 5px;
   border-radius: 6px;
@@ -996,7 +623,7 @@ body {
 
 
 
-.footer-top {
+.footer-top { 
   justify-content: space-between;
   display: flex;
 }
@@ -1037,9 +664,6 @@ body {
 
 
 
-
-
-
 .footer-top-cal ul {
   list-style: none;
   font-size: larger;
@@ -1047,12 +671,9 @@ body {
 }
 
 
-
-
 .footer-top-cal h4 {
   font-size: x-large;
 }
-
 
 
 
@@ -1063,7 +684,6 @@ body {
   display: block;
   text-align: center;
 }
-
 
 
 
@@ -1081,15 +701,11 @@ body {
 
 
 
-
 .parrafo {
   color: #efe6de;
 
 
-
-
 }
-
 
 
 
@@ -1103,14 +719,12 @@ body {
 
 
 
-
 #idea_riv {
   background-color: #f2e5c6;
   background-image: url(asset/rivalidad.jpg);
   border: 3px;
   max-width: none;
 }
-
 
 
 
@@ -1124,14 +738,12 @@ body {
 
 
 
-
 #idea_fan {
   background-color: #f2e5c6;
   background-image: url(asset/fans.jpg);
   border: 3px;
   max-width: none;
 }
-
 
 
 
@@ -1142,13 +754,11 @@ body {
 
 
 
-
 .contenedor_principal {
   margin: 0 auto;
   background-color: var(--rojo-008);
   width: 1250px;
 }
-
 
 
 
@@ -1163,7 +773,6 @@ body {
 
 
 
-
 .footer-top-botn {
   background-color: var(--rojo-btn);
   padding: 24px;
@@ -1174,14 +783,12 @@ body {
 
 
 
-
 .footer-email {
   background-color: #711023;
   padding: 14px;
   padding-bottom: 16px;
   display: block;
   text-align: center;
-
 
 }
 
@@ -1218,4 +825,3 @@ body {
   width: 180px;
   padding: 6px;
 }
-
