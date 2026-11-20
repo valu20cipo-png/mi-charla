@@ -1,10 +1,23 @@
 :root {
+  /*este es el que guarda los colores */
   --blanco: #f1f1f1;
   --rojo: #DD2E26;
   --cian: #12C2EC;
   --amarillo: #ECDB14;
   --azul-tec: #0A8BAA;
   --naranja: #ef6f46;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -26,9 +39,29 @@
 
 
 
+
+
+
+
+
+
+
+  /*colores de texto*/
   --texto: #ff7878;
   --texto-suave: #c54040;
   --rojo: #d44444;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,7 +77,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -54,27 +108,45 @@
    en pantalla sin usar márgenes a ojo.
    ========================================================= */
 body {
+  /*selecciono el cuerpo de la página*/
   margin: 0;
   /* elimina o agrega el margen o los bordes de la pantalla*/
   min-height: 100vh;
+  /*hace que la página ocupe
+   como mínimo toda la altura de la pantalla.*/
   background: var(--blanco-920);
   /*es el color de fondo nde la pagina*/
   background-image: url(./asset/ln.jpg);
+  /*imagen del fondo */
   background-repeat: no-repeat;
+  /*evita que se repita la imagen*/
   background-size: cover;
+  /*la imagen cubra el fondo.*/
   background-position: 10%;
+  /*cambia la posicion de la imagen*/
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   /*es la fuente o estilo de letra */
   color: var(--texto);
   /*color del texto determinado de body*/
 }
 
+
+
+
 .desp {
+  /*es el div del index*/
   display: flex;
+  /*organizar y centrar el contenido.*/
   justify-content: center;
+  /*centro el contenido horizontalmente.*/
   align-items: center;
+  /*acomodar los items*/
   height: 100vh;
+  /*ocupa el tamaño de la pantalla*/
 }
+
+
+
 
 /* =========================================================
    3 · LA TARJETA
@@ -97,6 +169,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
    4 · CADA PARTE DE LA TARJETA
    ========================================================= */
@@ -108,6 +192,18 @@ body {
   object-fit: contain;
   /*ajustan y mantien la proporcin de la imagen*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,6 +226,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .tarjeta__nombre {
   margin: .4rem 0 0;
   /*le das margen*/
@@ -142,6 +250,18 @@ body {
   color: var(--rojo-97);
   /*es el color de la letrta*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,12 +280,36 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .tarjeta__autor {
   margin: 1.25rem 0 0;
   /*da un margen */
   color: var(--texto-suave);
   /*es el color de texto*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,6 +322,18 @@ body {
   margin-top: 1em;
   /*es el margen entre las tarjetas*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,6 +356,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .tarjeta__respuesta {
   margin: .5rem 0 0;
   /*le da un margen*/
@@ -213,7 +381,31 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,16 +415,32 @@ body {
    ========================================================= */
 .tarjeta__boton {
   display: inline-block;
+  /*darle dimensiones y espacios al botón.*/
   margin-top: 2rem;
+  /*separa el botón del contenido anterior.*/
   padding: .9rem 2rem;
+  /*agrega espacio interno.*/
   border-radius: 999px;
   /* 999px = píldora, sirve para botones */
   background: var(--rojo-22);
   color: var(--negro-990);
   font-weight: 700;
+  /*tamaño de letra*/
   text-decoration: none;
   /* sin subrayado, es un botón y no un texto */
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,6 +452,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .tarjeta__boton:active {
   background: var(--rojo-008);
 }
@@ -251,11 +471,37 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Accesibilidad: el foco del teclado tiene que verse SIEMPRE */
 .tarjeta__boton:focus-visible {
   outline: 3px solid #ffffff;
+
+
   outline-offset: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -278,6 +524,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .ficha__etiqueta {
   margin: 0;
   font-size: .75rem;
@@ -289,12 +547,36 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .ficha__titulo {
   margin: var(--e-2) 0 var(--e-5);
   font-size: 1.6rem;
   line-height: 1.25;
   color: var(--rojito);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -310,11 +592,35 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .ficha__texto {
   margin: 0;
   line-height: 1.65;
   color: var(--rosa);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -331,6 +637,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .ficha__tags li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
@@ -338,6 +656,18 @@ body {
   color: var(--rosa);
   font-size: .8rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -352,13 +682,25 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
   background-color: rgb(126, 9, 9);
   width: 1000px;
   margin: 0 auto;
   display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
+  gap: 25px; /*espacio entre elementos*/
+  flex-wrap: wrap; /*evita que los elementos se pasen de su lina*/
   justify-content: center;
   padding: 10px;
 }
@@ -366,14 +708,38 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .idea {
   background-color: #5c0008;
-  ;
+ 
   width: 360px;
   text-align: center;
   border: 3px solid #d44444;
   padding: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -386,6 +752,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .idea__titulo {
   font-size: 1.7rem;
   color: rgb(221, 215, 215);
@@ -394,10 +772,34 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .idea__parrafo {
   font-size: 1.3rem;
   line-height: 1.55;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -413,7 +815,25 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -427,15 +847,36 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .idea__enlace:active {
   background: var(--rojo-008);
 }
+
+
+
+
+
+
 
 
 .idea__enlace:focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 3px;
 }
+
+
+
 
 .lista {
   margin: var(--e-5) 0 0;
@@ -446,6 +887,12 @@ body {
 }
 
 
+
+
+
+
+
+
 .lista li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
@@ -454,14 +901,23 @@ body {
   font-size: .8rem;
 }
 
+
+
+
 .lista a {
   text-decoration: none;
   color: var(--champaña);
 }
 
+
+
+
 .lista ul {
   list-style: none;
 }
+
+
+
 
 .titulo {
   text-align: center;
@@ -469,6 +925,12 @@ body {
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
 }
+
+
+
+
+
+
 
 
 .container-header {
@@ -479,6 +941,12 @@ body {
 }
 
 
+
+
+
+
+
+
 .milogo {
   width: 110;
   border-radius: 40px;
@@ -486,10 +954,16 @@ body {
   border: 5px solid var(--naranja);
 }
 
+
+
+
 .container-header nav {
   padding: 15px;
   margin: 0;
 }
+
+
+
 
 .container-header nav ul {
   list-style: none;
@@ -497,6 +971,9 @@ body {
   gap: 15px;
   text-transform: uppercase;
 }
+
+
+
 
 .container-header__enlace {
   text-decoration: none;
@@ -507,22 +984,34 @@ body {
   transition: background-color 0.5s ease;
 }
 
+
+
+
 .container-header__enlace:hover {
   background-color: #c46e75;
   padding: 5px;
   border-radius: 6px;
 }
 
+
+
+
 .footer-top {
   justify-content: space-between;
   display: flex;
 }
+
+
+
 
 .footer-top a,
 .footer-botton a {
   color: var(--champaña);
   text-decoration: none;
 }
+
+
+
 
 .footer-botton {
   font-family: 'Courier New', Courier, monospace;
@@ -534,6 +1023,9 @@ body {
   display: flex;
 }
 
+
+
+
 .footer {
   background-color: #872d2f;
   border-width: 0;
@@ -542,15 +1034,27 @@ body {
 }
 
 
+
+
+
+
+
+
 .footer-top-cal ul {
   list-style: none;
   font-size: larger;
   padding-left: 0px;
 }
 
+
+
+
 .footer-top-cal h4 {
   font-size: x-large;
 }
+
+
+
 
 .footer-top-btn {
   background-color: var(--rojo-btn);
@@ -559,6 +1063,9 @@ body {
   display: block;
   text-align: center;
 }
+
+
+
 
 .mis_ideas {
   max-width: 520px;
@@ -572,10 +1079,19 @@ body {
   /* este margin me ayuda a dejar la caja al costado para que se vea la img*/
 }
 
+
+
+
 .parrafo {
   color: #efe6de;
 
+
+
+
 }
+
+
+
 
 .titulo_idea {
   color: #ad0d2f;
@@ -585,12 +1101,18 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+
+
+
 #idea_riv {
   background-color: #f2e5c6;
   background-image: url(asset/rivalidad.jpg);
   border: 3px;
   max-width: none;
 }
+
+
+
 
 #idea_pas {
   background-color: #f2e5c6;
@@ -600,6 +1122,9 @@ body {
   max-width: none;
 }
 
+
+
+
 #idea_fan {
   background-color: #f2e5c6;
   background-image: url(asset/fans.jpg);
@@ -607,16 +1132,25 @@ body {
   max-width: none;
 }
 
+
+
+
 #idea_principal {
   background-color: var(--champaña);
   background-image: none;
 }
+
+
+
 
 .contenedor_principal {
   margin: 0 auto;
   background-color: var(--rojo-008);
   width: 1250px;
 }
+
+
+
 
 .pag_principal {
   background-color: #5c0008;
@@ -627,6 +1161,9 @@ body {
   display: flex;
 }
 
+
+
+
 .footer-top-botn {
   background-color: var(--rojo-btn);
   padding: 24px;
@@ -635,36 +1172,50 @@ body {
   text-align: center;
 }
 
+
+
+
 .footer-email {
   background-color: #711023;
   padding: 14px;
   padding-bottom: 16px;
   display: block;
   text-align: center;
- 
+
+
 }
+
+
+
 
 .parrafo-prin {
   color: var(--champaña);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-left:#d44444 6px solid;
+  border-left: #d44444 6px solid;
   padding: 50px;
   font-size: large;
 }
-.parrafo-prin-2{
+
+
+.parrafo-prin-2 {
   color: var(--champaña);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-right:#d44444 6px solid;
+  border-right: #d44444 6px solid;
   padding: 50px;
   font-size: large;
 }
-.img-prin{
+
+
+.img-prin {
   width: 220px;
   padding: 6px;
 }
-.img-prin-2{
-    width: 180px;
+
+
+.img-prin-2 {
+  width: 180px;
   padding: 6px;
 }
+
