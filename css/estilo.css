@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
   /* Escala del rojo */
   --blanco-920: #ecdddd;
   --rojo-851: #851717;
@@ -28,10 +32,20 @@
 
 
 
+
+
+
+
   /*colores de texto*/
   --texto: #ff7878;
   --texto-suave: #c54040;
   --rojo: #d44444;
+
+
+
+
+
+
 
 
 
@@ -49,7 +63,15 @@
 
 
 
+
+
+
+
 }
+
+
+
+
 
 
 
@@ -62,6 +84,7 @@
 body {
   /*selecciono el cuerpo de la página*/
   margin: 0;
+  /*espacio exterior*/
   /* elimina o agrega el margen o los bordes de la pantalla*/
   min-height: 100vh;
   /*hace que la página ocupe
@@ -84,9 +107,11 @@ body {
 
 
 
+
+
+
 .desp {
-  /*Centra la tarjeta en el 
-  medio de la pantalla, tanto horizontal como verticalmente.*/
+  /*Centra la tarjeta en el medio de la pantalla, tanto horizontal como verticalmente.*/
   display: flex;
   /*organizar y centrar el contenido.*/
   justify-content: center;
@@ -99,12 +124,14 @@ body {
 
 
 
+
+
+
 /* =========================================================
    3 · LA TARJETA
    ========================================================= */
 .tarjeta {
-  /*Diseña el recuadro principal
-  donde está toda la información de mi presentación.*/
+  /*Diseña el recuadro principal donde está toda la información de mi presentación.*/
   background: var(--rojo-008);
   /*es el color de la tarjeta*/
   border-top: 8px solid var(--rojo);
@@ -112,12 +139,18 @@ body {
   border-radius: 12px;
   /*el tamaño de los bordes*/
   padding: 2.5rem 2rem;
+  /*espacio interior*/
   /*da espacio al contenido*/
   text-align: center;
   /*alinia el texto al centro*/
   max-width: 420px;
   /*cambia el ancho de la tarjeta*/
 }
+
+
+
+
+
 
 
 
@@ -135,6 +168,10 @@ body {
   object-fit: contain;
   /*ajustan y mantien la proporcin de la imagen*/
 }
+
+
+
+
 
 
 
@@ -159,6 +196,11 @@ body {
 
 
 
+
+
+
+
+
 .tarjeta__nombre {
   /*modificando el tamaño, el grosor y el color de la letra.*/
   margin: .4rem 0 0;
@@ -172,6 +214,10 @@ body {
   color: var(--rojo-97);
   /*es el color de la letrta*/
 }
+
+
+
+
 
 
 
@@ -195,8 +241,16 @@ body {
 
 
 
+
+
+
+
+
+
+
+
 .tarjeta__autor {
-  /*	Cambia el color y el espacio del texto
+  /*  Cambia el color y el espacio del texto
    que contiene la frase del autor.*/
   margin: 1.25rem 0 0;
   /*da un margen */
@@ -210,9 +264,15 @@ body {
 
 
 
+
+
+
+
+
+
+
 .tarjeta--oscura {
-  /*Crea una segunda tarjeta con 
-  un fondo diferente y un borde superior.*/
+  /*Crea una segunda tarjeta con un fondo diferente y un borde superior.*/
   background: var(--rojo-94);
   /*color de fondo de la tarjeta pequeña*/
   border-top-color: var(--rojo);
@@ -220,6 +280,12 @@ body {
   margin-top: 1em;
   /*es el margen entre las tarjetas*/
 }
+
+
+
+
+
+
 
 
 
@@ -246,6 +312,11 @@ body {
 
 
 
+
+
+
+
+
 .tarjeta__respuesta {
   /*es el texto o respuesta en este caso es el nombre del autor de la frase */
   margin: .5rem 0 0;
@@ -259,7 +330,16 @@ body {
 
 
 
+
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -292,10 +372,22 @@ body {
 
 
 
+
+
+
+
+
+
 .tarjeta__boton:hover {
   /*l fondo del botón cuando paso el mouse por encima.*/
   background: var(--naranja);
 }
+
+
+
+
+
+
 
 
 
@@ -311,13 +403,26 @@ body {
 
 
 
+
+
+
+
+
 /* Accesibilidad: el foco del teclado tiene que verse SIEMPRE */
 .tarjeta__boton:focus-visible {
   outline: 3px solid #ffffff;
 
 
+
+
   outline-offset: 3px;
 }
+
+
+
+
+
+
 
 
 
@@ -344,6 +449,11 @@ body {
 
 
 
+
+
+
+
+
 .ficha__etiqueta {
   /*texto pequeño que aparece arriba del título.*/
   margin: 0;
@@ -352,6 +462,11 @@ body {
   text-transform: uppercase;
   color: var(--blanco);
 }
+
+
+
+
+
 
 
 
@@ -369,6 +484,11 @@ body {
 
 
 
+
+
+
+
+
 .ficha__campo {
   /*los subtítulos,*/
   margin: var(--e-4) 0 var(--e-1);
@@ -380,7 +500,11 @@ body {
 
 
 
-.ficha__texto { /*párrafos que explican cada seccion.*/
+
+
+
+.ficha__texto {
+  /*párrafos que explican cada seccion.*/
   margin: 0;
   line-height: 1.65;
   color: var(--rosa);
@@ -389,8 +513,13 @@ body {
 
 
 
+
+
+
+
 /* las etiquetas: display inline-flex las deja como píldoras */
-.ficha__tags { /*Organiza las palabras clave en forma de lista horizontal.*/
+.ficha__tags {
+  /*Organiza las palabras clave en forma de lista horizontal.*/
   margin: var(--e-5) 0 0;
   padding: 0;
   display: flex;
@@ -401,7 +530,12 @@ body {
 
 
 
-.ficha__tags li { /*es para los elementos de la lista les da diseñó*/
+
+
+
+
+.ficha__tags li {
+  /*es para los elementos de la lista les da diseñó*/
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
   background: var(--rojo-3333);
@@ -413,7 +547,13 @@ body {
 
 
 
-#ideas { /*es la caja principal de la pagina*/
+
+
+
+
+
+#ideas {
+  /*es la caja principal de la pagina*/
   background-color: #f2e5c6;
   background-image: none;
   border: 3px;
@@ -423,7 +563,12 @@ body {
 
 
 
-.container { /*contenedor que agrupa todas las tarjetas y las organiza.*/
+
+
+
+
+.container {
+  /*contenedor que agrupa todas las tarjetas y las organiza.*/
   background-color: rgb(126, 9, 9);
   width: 1000px;
   margin: 0 auto;
@@ -440,7 +585,13 @@ body {
 
 
 
-.idea { /*es la que diseña cada tarjeta individual*/
+
+
+
+
+
+.idea {
+  /*es la que diseña cada tarjeta individual*/
   background-color: #5c0008;
   width: 360px;
   text-align: center;
@@ -453,7 +604,14 @@ body {
 
 
 
-.idea__imagen img { /*el tamaño  de la imagen de cada tarjeta.*/
+
+
+
+
+
+
+.idea__imagen img {
+  /*el tamaño  de la imagen de cada tarjeta.*/
   width: 80px;
   height: 80px;
 }
@@ -463,7 +621,14 @@ body {
 
 
 
-.idea__titulo { /*diseña el titulo*/
+
+
+
+
+
+
+.idea__titulo {
+  /*diseña el titulo*/
   font-size: 1.7rem;
   color: rgb(221, 215, 215);
 }
@@ -472,7 +637,13 @@ body {
 
 
 
-.idea__parrafo { /*es el diseño de las p o parrafos*/
+
+
+
+
+
+.idea__parrafo {
+  /*es el diseño de las p o parrafos*/
   font-size: 1.3rem;
   line-height: 1.55;
 }
@@ -480,7 +651,12 @@ body {
 
 
 
-.idea__enlace { /*Diseña el enlace que funciona como botón para ver más información.*/
+
+
+
+
+.idea__enlace {
+  /*Diseña el enlace que funciona como botón para ver más información.*/
   display: inline-block;
   margin-top: 2rem;
   padding: .9rem 2rem;
@@ -492,12 +668,19 @@ body {
   text-transform: uppercase;
 
 
+
+
 }
 
 
 
 
-.idea__enlace:hover { /*Cambia el color del botón cuando paso el mouse por encima.*/
+
+
+
+
+.idea__enlace:hover {
+  /*Cambia el color del botón cuando paso el mouse por encima.*/
   background: var(--naranja);
   color: white;
 }
@@ -505,14 +688,24 @@ body {
 
 
 
-.idea__enlace:active { /*Cambia el fondo mientras presiono el botón.*/
+
+
+
+
+.idea__enlace:active {
+  /*Cambia el fondo mientras presiono el botón.*/
   background: var(--rojo-008);
 }
 
 
 
 
-.idea__enlace:focus-visible { /*Muestra un contorno cuando selecciono el enlace con el teclado.*/
+
+
+
+
+.idea__enlace:focus-visible {
+  /*Muestra un contorno cuando selecciono el enlace con el teclado.*/
   outline: 3px solid #ffffff;
   outline-offset: 3px;
 }
@@ -520,7 +713,12 @@ body {
 
 
 
-.lista { /*los elementos de la lista horizontalmente y establece el espacio entre ellos.*/
+
+
+
+
+.lista {
+  /*los elementos de la lista horizontalmente y establece el espacio entre ellos.*/
   margin: var(--e-5) 0 0;
   padding: 0;
   display: flex;
@@ -530,7 +728,11 @@ body {
 
 
 
-.lista li { /*Diseña cada elemento de la lista, agregando fondo, color y espacios internos.*/
+
+
+
+.lista li {
+  /*Diseña cada elemento de la lista, agregando fondo, color y espacios internos.*/
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
   background: #872d2f;
@@ -541,7 +743,12 @@ body {
 
 
 
-.lista a { /*Modifica la apariencia de los enlaces que están dentro de la lista.*/
+
+
+
+
+.lista a {
+  /*Modifica la apariencia de los enlaces que están dentro de la lista.*/
   text-decoration: none;
   color: var(--champaña);
 }
@@ -549,14 +756,24 @@ body {
 
 
 
-.lista ul { /*Elimina las viñetas de las listas internas.*/
+
+
+
+
+.lista ul {
+  /*Elimina las viñetas de las listas internas.*/
   list-style: none;
 }
 
 
 
 
-.titulo { 
+
+
+
+
+.titulo {
+  /*diseña el titulo */
   text-align: center;
   font-size: 70px;
   font-weight: 900;
@@ -565,7 +782,11 @@ body {
 
 
 
-.container-header { /*Modifica el tamaño, los bordes y la apariencia del logo.*/
+
+
+
+.container-header {
+  /*Modifica el tamaño, los bordes y la apariencia del logo.*/
   background: #872d2f;
   display: flex;
   justify-content: space-between;
@@ -574,7 +795,11 @@ body {
 
 
 
-.milogo { /*Modifica el tamaño, los bordes y la apariencia del logo.*/
+
+
+
+.milogo {
+  /*Modifica el tamaño, los bordes y la apariencia del logo.*/
   width: 110;
   border-radius: 40px;
   padding: 10px red;
@@ -584,7 +809,12 @@ body {
 
 
 
-.container-header nav { /* es el que modifica los bordes */
+
+
+
+
+.container-header nav {
+  /* Modifica los espacios que rodean al menú de navegación. */
   padding: 15px;
   margin: 0;
 }
@@ -592,7 +822,12 @@ body {
 
 
 
-.container-header nav ul { 
+
+
+
+
+.container-header nav ul {
+  /* orgaiza los enlaces del menú horizontalmente y elimina las viñetas.*/
   list-style: none;
   display: flex;
   gap: 15px;
@@ -602,8 +837,12 @@ body {
 
 
 
-.container-header__enlace { 
-  text-decoration: none;
+
+
+
+
+.container-header__enlace {
+  /*Modifica el color, la letra y el tamaño de los enlaces del menú*/
   text-transform: uppercase;
   color: #4d111b;
   font-weight: 800;
@@ -614,7 +853,12 @@ body {
 
 
 
-.container-header__enlace:hover { 
+
+
+
+
+.container-header__enlace:hover {
+  /*Cambia el fondo y agrega espacio alrededor del enlace cuando paso el mouse por encima.*/
   background-color: #c46e75;
   padding: 5px;
   border-radius: 6px;
@@ -623,7 +867,12 @@ body {
 
 
 
-.footer-top { 
+
+
+
+
+.footer-top {
+  /*Organiza las columnas de la primera parte del footer.*/
   justify-content: space-between;
   display: flex;
 }
@@ -631,8 +880,14 @@ body {
 
 
 
+
+
+
+
 .footer-top a,
+/*Cambia el color y elimina el subrayado de los enlaces superiores */
 .footer-botton a {
+  /* Cambia el color y elimina el subrayado de los enlaces superiores.*/
   color: var(--champaña);
   text-decoration: none;
 }
@@ -640,7 +895,12 @@ body {
 
 
 
+
+
+
+
 .footer-botton {
+  /*Organiza la parte inferior del footer, donde están los enlaces legales y la imagen.*/
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   padding: 12rem, 25rem;
@@ -653,7 +913,12 @@ body {
 
 
 
+
+
+
+
 .footer {
+  /*Modifica el fondo y el diseño general del pie de página.*/
   background-color: #872d2f;
   border-width: 0;
   margin: 0;
@@ -664,20 +929,33 @@ body {
 
 
 
+
+
+
+
+
 .footer-top-cal ul {
+  /*Quita las viñetas de las listas y modifica el tamaño de letra.*/
   list-style: none;
   font-size: larger;
   padding-left: 0px;
 }
 
 
+
+
 .footer-top-cal h4 {
+  /*Modifica el tamaño de los títulos de cada columna.*/
   font-size: x-large;
 }
 
 
 
+
+
+
 .footer-top-btn {
+  /*Diseña el botón de arrepentimiento.*/
   background-color: var(--rojo-btn);
   padding: 8px;
   padding-bottom: 20px;
@@ -687,7 +965,11 @@ body {
 
 
 
+
+
+
 .mis_ideas {
+  /*Crea el recuadro donde coloco el contenido de cada página.*/
   max-width: 520px;
   padding: var(--e-5);
   /* 2rem de aire adentro */
@@ -701,7 +983,11 @@ body {
 
 
 
+
+
+
 .parrafo {
+  /*modifica el color de los parrafos */
   color: #efe6de;
 
 
@@ -709,7 +995,11 @@ body {
 
 
 
+
+
+
 .titulo_idea {
+  /*Diseña los títulos principales, modificando su color, tamaño, grosor y alineación.*/
   color: #ad0d2f;
   text-align: center;
   font-size: 50px;
@@ -719,7 +1009,11 @@ body {
 
 
 
+
+
+
 #idea_riv {
+  /*El fondo de la página de rivalidad.*/
   background-color: #f2e5c6;
   background-image: url(asset/rivalidad.jpg);
   border: 3px;
@@ -728,7 +1022,11 @@ body {
 
 
 
+
+
+
 #idea_pas {
+  /*El fondo de la página de pasion.*/
   background-color: #f2e5c6;
   background-image: url(asset/pasion.avif);
   /* la url es para que se vea la imagen en css*/
@@ -738,7 +1036,11 @@ body {
 
 
 
+
+
+
 #idea_fan {
+  /*El fondo de la página de fanatismo.*/
   background-color: #f2e5c6;
   background-image: url(asset/fans.jpg);
   border: 3px;
@@ -747,14 +1049,22 @@ body {
 
 
 
+
+
+
 #idea_principal {
+  /*El fondo de la página principal*/
   background-color: var(--champaña);
   background-image: none;
 }
 
 
 
+
+
+
 .contenedor_principal {
+  /*Es el contenedor general que agrupa el contenido principal de la charla.*/
   margin: 0 auto;
   background-color: var(--rojo-008);
   width: 1250px;
@@ -762,7 +1072,11 @@ body {
 
 
 
+
+
+
 .pag_principal {
+  /*Diseña las secciones donde aparecen las imágenes y los textos. También utiliza Flexbox para organizarlos.*/
   background-color: #5c0008;
   width: 100%;
   text-align: center;
@@ -773,7 +1087,11 @@ body {
 
 
 
+
+
+
 .footer-top-botn {
+  /*Diseña el botón de suscripción.*/
   background-color: var(--rojo-btn);
   padding: 24px;
   padding-bottom: 12px;
@@ -783,19 +1101,30 @@ body {
 
 
 
+
+
+
 .footer-email {
+  /*  Modifica la apariencia del espacio donde se ingresa el email*/
   background-color: #711023;
   padding: 14px;
   padding-bottom: 16px;
   display: block;
   text-align: center;
 
+
 }
 
 
 
 
+
+
+
+
 .parrafo-prin {
+  /*Modifica el color, la tipografía, el tamaño y
+   los espacios del primer tipo de párrafo. También agrega un borde izquierdo.*/
   color: var(--champaña);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -805,7 +1134,10 @@ body {
 }
 
 
+
+
 .parrafo-prin-2 {
+  /*Modifica el diseño del segundo tipo de párrafo y agrega un borde derecho.*/
   color: var(--champaña);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -814,14 +1146,15 @@ body {
   font-size: large;
 }
 
-
 .img-prin {
+  /*Establece el ancho y el espacio alrededor de las imágenes que estan a la izquierda.*/
   width: 220px;
   padding: 6px;
 }
 
 
 .img-prin-2 {
+  /*  Establece el ancho y el espacio de la imagen que esta a la derecha.*/
   width: 180px;
   padding: 6px;
 }
